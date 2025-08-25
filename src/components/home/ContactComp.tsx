@@ -65,7 +65,7 @@ const ContactComp = () => {
                   <Link href="https://www.facebook.com/profile.php?id=100063979907207" target="_blank" rel="noreferrer">
                     <i className="fab fa-facebook-f"></i>
                   </Link>
-                  <Link href="https://www.instagram.com/iyc.olympiad/" target="_blank" rel="noreferrer">
+                  <Link href="https://www.instagram.com/iyco.official?utm_source=ig_web_button_share_sheet&igsh=MXU2cm8xMWx0N284MA==" target="_blank" rel="noreferrer">
                     <i className="fab fa-instagram"></i>
                   </Link>
                   <Link href="https://www.youtube.com/@IYSAOfficial" target="_blank" rel="noreferrer">

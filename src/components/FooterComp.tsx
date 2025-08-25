@@ -33,7 +33,7 @@ const FooterComp = () =>{
                             <Link href="/#about">About</Link>
                         </li>
                         <li>
-                            <Link href="https://drive.google.com/file/d/1KHal6e_EFIXEZVbYmm7CBVWbjx1O_58o/view?usp=drive_link" 
+                            <Link href="https://drive.google.com/file/d/1oTKgi-6BYUVDPh-Mn_K2w86dxGqaAIyO/view?usp=sharing" 
                                 target='_blank'>
                                     Guide Book
                             </Link>
@@ -70,7 +70,7 @@ const FooterComp = () =>{
                             </Link>
                         </li>
                         <li>
-                            <Link href="https://www.instagram.com/iyc.olympiad/" 
+                            <Link href="https://www.instagram.com/iyco.official?utm_source=ig_web_button_share_sheet&igsh=MXU2cm8xMWx0N284MA==" 
                                 target='_blank'>
                                 <i className='fab fa-instagram'></i>
                             </Link>
