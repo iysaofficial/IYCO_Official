@@ -5,6 +5,36 @@ import React, { useEffect } from "react";
 
 const ContactComp = () => {
   useEffect(() => {
+      const scriptURL =
+      "https://script.google.com/macros/s/AKfycbzdgUOy_s6zjJQTgqXQ7GX3H1_w6TvWq1hsBZgH0mSREWt3qXCKA34-qo74-jfDVbHE/exec";
+
+      const form = document.forms.namedItem("home-contact");
+
+      if (form) {
+      const handleSubmit = async (e: Event) => {
+          e.preventDefault();
+          try {
+          await fetch(scriptURL, {
+              method: "POST",
+              body: new FormData(form),
+          });
+          alert("Message sent successfully!");
+          form.reset();
+          } catch (error) {
+          console.error("Error:", error);
+          alert("Failed to send Message.");
+          }
+      };
+
+      form.addEventListener("submit", handleSubmit);
+
+      // cleanup listener
+      return () => {
+          form.removeEventListener("submit", handleSubmit);
+      };
+      }
+  }, []);
+  useEffect(() => {
     const inputs = document.querySelectorAll<HTMLInputElement | HTMLTextAreaElement>(".input");
 
     const focusFunc = (e: Event) => {
@@ -89,23 +119,23 @@ const ContactComp = () => {
               <span className="circle one"></span>
               <span className="circle two"></span>
 
-              <form action="https://formspree.io/f/xjvneprn" autoComplete="off" method="POST">
+              <form action="" autoComplete="off" method="POST" name="home-contact">
                 <h3 className="title">Contact us</h3>
 
                 <div className="input-container">
-                  <input id="name" type="text" name="name" className="input" />
+                  <input id="name" type="text" name="Name" className="input" />
                   <label htmlFor="name">name</label>
                   <span>name</span>
                 </div>
 
                 <div className="input-container">
-                  <input id="email" type="email" name="email" className="input" />
+                  <input id="email" type="email" name="Email" className="input" />
                   <label htmlFor="email">Email</label>
                   <span>Email</span>
                 </div>
 
                 <div className="input-container textarea">
-                  <textarea id="message" name="message" className="input"></textarea>
+                  <textarea id="message" name="Message" className="input"></textarea>
                   <label htmlFor="message">Message</label>
                   <span>Message</span>
                 </div>
