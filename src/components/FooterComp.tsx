@@ -55,7 +55,7 @@ const FooterComp = () =>{
                         </li>
                         <li>
                             <i className='fas fa-phone-alt'></i>
-                            <span>+6283870026877</span>
+                            <span>+6288213248890</span>
                         </li>
                         <li>
                             <i className='fas fa-envelope'></i>
