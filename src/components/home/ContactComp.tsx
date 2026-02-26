@@ -1,5 +1,4 @@
-"use client";
-
+import Image from 'next/image';
 import Link from "next/link";
 import React, { useEffect } from "react";
 
@@ -70,19 +69,19 @@ const ContactComp = () => {
 
               <div className="info">
                 <div className="information">
-                  <img src="/assets/images/icon/location.png" className="contact-icon" alt="" />
+                  <Image src="/assets/images/icon/location.png" className="contact-icon" alt="" width={24} height={24} />
                   <Link href="https://goo.gl/maps/9x18coXGCmSscKec6" target="_blank" rel="noreferrer">
                     Jl. Kemang No. 63 RT 03 RW 06
                   </Link>
                 </div>
                 <div className="information">
-                  <img src="/assets/images/icon/email.png" className="contact-icon" alt="" />
+                  <Image src="/assets/images/icon/email.png" className="contact-icon" alt="" width={24} height={24} />
                   <Link href="mailto:iysa.olympiad@gmail.com" target="_blank" rel="noreferrer">
                     iysa.olympiad@gmail.com
                   </Link>
                 </div>
                 <div className="information">
-                  <img src="/assets/images/icon/phone.png" className="contact-icon" alt="" />
+                  <Image src="/assets/images/icon/phone.png" className="contact-icon" alt="" width={24} height={24} />
                   <Link href="https://wa.me/+6288213248890" target="_blank" rel="noreferrer">
                     +6288213248890
                   </Link>

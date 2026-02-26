@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const LogoComp = () =>{
     return(
         <>
@@ -7,13 +9,13 @@ const LogoComp = () =>{
             <div className="brand-logo">
                 <ul>
                     <li>
-                        <img src="/assets/images/logo/LogoIYSA.webp" alt=""/>
+                        <Image src="/assets/images/logo/LogoIYSA.webp" alt="" width={150} height={150}/>
                     </li>
                     {/* <li>
                         <img src="/assets/images/logo/LOGOAKTUARIA.png" alt=""/>
                     </li> */}
                      <li>
-                        <img src="/assets/images/logo/warmadewa.png" alt=""/>
+                        <Image src="/assets/images/logo/warmadewa.png" alt="" width={150} height={150}/>
                     </li>
                 </ul>
             </div>
@@ -22,7 +24,7 @@ const LogoComp = () =>{
             <div className="brand-logo">
                 <ul>
                     <li>
-                        <img src="/assets/images/logo/MIICA.png" alt=""/>
+                        <Image src="/assets/images/logo/MIICA.png" alt="" width={150} height={150}/>
                     </li>
                     {/* <li>
                         <img src="./assets/images/logo/MYSA.png" style={{height: "170px"}} alt=""/>

@@ -3,6 +3,7 @@ import NavbarComp from '@/components/NavbarComp';
 import FooterComp from '@/components/FooterComp';
 import { ReactNode } from 'react';
 import Script from "next/script";
+ 
 
 export const metadata = {
   title: 'IYCO Official'
@@ -30,20 +31,18 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         />
 
         {/* Google Analytics */}
-        <script
+        <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-0SG35WZWCB"
-        ></script>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-0SG35WZWCB');
-            `,
-          }}
-        />
+        ></Script>
+        <Script id="google-analytics">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-0SG35WZWCB');
+          `}
+        </Script>
       </head>
       <body>
         <NavbarComp />

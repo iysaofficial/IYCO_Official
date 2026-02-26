@@ -8,7 +8,7 @@ import LogoComp from '@/components/home/LogoComp'
 import NewsletterComp from '@/components/home/NewsletterComp'
 import CategoryComp from '@/components/home/CategoryComp'
 import ContactComp from '@/components/home/ContactComp'
-import NewsComp from '@/components/home/NewsComp'
+ 
 
 
 export default function HomePage() {

@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import Link from "next/link"
 
 const HeroComp = () =>{
@@ -5,7 +6,7 @@ const HeroComp = () =>{
         <>
         <section className="hero-section">
             <div className="hero-container">
-                <img src="/assets/images/logo/IYCO.png" alt=""/>
+                <Image src="/assets/images/logo/IYCO.png" alt="" width={500} height={500}/>
                 <h1>International Youth Chemistry Olympiad</h1>
                 <p>Registration is now open for the International Youth Chemistry Olympiad! <br /> Join this prestigious event and gain an unforgettable experience!
                 </p>

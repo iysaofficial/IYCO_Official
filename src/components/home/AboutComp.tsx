@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 const AboutComp = () =>{
     return(
         <>
@@ -6,7 +8,7 @@ const AboutComp = () =>{
                 <h1>About IYCO</h1>
                 <div className="content">
                     <div className="left-side">
-                        <img src="/assets/images/logo/IYCO.png" alt="" />
+                        <Image src="/assets/images/logo/IYCO.png" alt="" width={500} height={500} />
                     </div>
                     <div className="right-side">
                         <h2>Objective</h2>
