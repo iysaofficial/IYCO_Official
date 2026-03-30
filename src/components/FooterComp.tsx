@@ -33,7 +33,7 @@ const FooterComp = () =>{
                             <Link href="/#about">About</Link>
                         </li>
                         <li>
-                            <Link href="https://drive.google.com/file/d/1oTKgi-6BYUVDPh-Mn_K2w86dxGqaAIyO/view?usp=sharing" 
+                            <Link href="https://drive.google.com/file/d/1F9-5_lirB0SpQIesdbUcPREq3Tb8ZvB6/view?usp=sharing" 
                                 target='_blank'>
                                     Guide Book
                             </Link>
