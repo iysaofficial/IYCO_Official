@@ -48,7 +48,7 @@ const ListOfWinnerDetail2026Comp = () => {
                     <div className="content">
                         <h2>List of Winner Online - SHS</h2>
                         <br />
-                        <Link href="https://drive.google.com/file/d/1fwoS6hB63kzE82jAiz9Ng_2YzXaCt-Do/view?usp=sharing" target="_blank" className="low-detail-document-button">Download</Link>
+                        <Link href="https://drive.google.com/file/d/1nlv668SUIXJKrGUHp7bh5hvLyLIjRq-o/view?usp=sharing" target="_blank" className="low-detail-document-button">Download</Link>
                     </div>
                 </div>
 
